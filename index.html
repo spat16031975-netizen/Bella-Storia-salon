@@ -5640,7 +5640,8 @@ if(window.MutationObserver){var busy=false;new MutationObserver(function(){if(bu
 upd();
 })();</script>
 <script>(function(){var mq=matchMedia('(max-width:767px)');
-function fix(){var on=mq.matches;['services','works','masters','reviews'].forEach(function(id){var h=document.querySelector('#'+id+' .section-head h2');if(!h)return;if(on){h.style.setProperty('font-size','25px','important');h.style.setProperty('letter-spacing','0','important')}else{h.style.removeProperty('font-size');h.style.removeProperty('letter-spacing')}})}
+function fix(){var m=mq.matches;[].forEach.call(document.querySelectorAll('section h2'),function(h){
+ h.style.setProperty('font-size',m?'25px':'40px','important');h.style.setProperty('letter-spacing',m?'0':'-.02em','important');h.style.setProperty('font-weight','400','important');h.style.setProperty('line-height','1.1','important')})}
 fix();addEventListener('resize',fix);if(mq.addEventListener)mq.addEventListener('change',fix)})();</script>
 </body>
 </html>
