@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bella Storia — Журнальная классика (демо)</title>
-<meta name="description" content="Салон красоты «Bella Storia» в Московском районе Минска: стрижки, окрашивание, закрашивание седины, уход за волосами. Низкие цены и скидки. Запись без долгого ожидания.">
+<meta name="description" content="Bella Storia — демо-сайт салона красоты: стрижки, окрашивание, уход за волосами, маникюр, брови и макияж. Онлайн-запись к мастеру.">
 <meta name="theme-color" content="#E9DDD1">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Bella Storia">
-<meta property="og:title" content="Салон красоты «Bella Storia» — Минск, Московский район">
-<meta property="og:description" content="Стрижки, окрашивание, уход за волосами, маникюр. Низкие цены и скидки. ул. Яна Чечота, 30.">
+<meta property="og:title" content="Bella Storia — демо-сайт салона красоты">
+<meta property="og:description" content="Стрижки, окрашивание, уход за волосами, маникюр. Демонстрационный сайт, не привязан к реальному салону.">
 
 <link rel="preload" as="image" href="images/35462878cd.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +33,6 @@
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "21:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "20:00" }
-  ],
-  "sameAs": [
-    "https://www.instagram.com/prestizh_minsk/"
   ]
 }
 </script>
@@ -3506,6 +3503,7 @@ html body:not(#zz):not(#zy) .mobile-bar .btn{flex:1 1 0!important;min-width:0!im
 @media (max-width:767px){html body:not(#zz):not(#zy) .hero .hero-actions a.btn-primary{display:none!important}
 html body:not(#zz):not(#zy) .hero .hero-actions a.hero-cb.hero-cb{margin:0 18px 0 0!important}}
 html body:not(#zz):not(#zy) .wg-more{display:none!important}
+html body:not(#zz):not(#zy) .map-ph{display:flex;align-items:center;justify-content:center;text-align:center;background:#eadfcb;color:#7a5731;font:italic 18px/1.4 'Cormorant Garamond',Georgia,serif;padding:20px;box-sizing:border-box}
 </style>
 </head>
 <body>
@@ -4024,8 +4022,7 @@ html body:not(#zz):not(#zy) .wg-more{display:none!important}
       </div>
       <div class="map-card reveal" id="map">
         <div class="pin"><svg aria-hidden="true"><use href="#i-pin"/></svg></div>
-        <h3>Мы на карте</h3><iframe class="ya-map" title="Карта Минска — Яндекс Карты" src="https://yandex.ru/map-widget/v1/?ll=27.561831%2C53.902284&z=11&l=map&pt=27.561831%2C53.902284%2Cpm2rdm" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div class="ya-btns"><a class="btn btn-primary ya-route js-route" href="#" target="_blank" rel="noopener noreferrer">Проложить маршрут</a><a class="btn btn-outline js-yandex" href="#" target="_blank" rel="noopener noreferrer">Открыть в Яндекс Картах</a></div>
+        <h3>Мы на карте</h3><div class="ya-map map-ph" role="img" aria-label="Место для карты"><span>Здесь будет карта с адресом салона</span></div>
       </div>
     </div>
   </div>
@@ -4192,8 +4189,8 @@ const CONFIG = {
   TELEGRAM_CHAT_ID: 'ВСТАВЬТЕ_CHAT_ID',
 
   // --- Ссылки ---
-  SLIVKI_URL: 'https://www.slivki.by/salony-krasoty/prestizh',
-  INSTAGRAM_URL: 'https://www.instagram.com/prestizh_minsk/',
+  SLIVKI_URL: '',
+  INSTAGRAM_URL: '',
   // Ссылка на Яндекс Карты. Замените на точную ссылку организации, когда она будет.
   // Адрес для карты (поиск в Яндекс Картах). Пока указан только город; впишите точный адрес салона, когда он появится (например 'Минск, улица ..., 1').
   // Основной телефон салона: впишите номер (label — как показывать, tel — для звонка в формате +375XXXXXXXXX).
@@ -4202,13 +4199,13 @@ const CONFIG = {
   SOCIALS: { telegram: '' },
   PHONE: { label: '+375 (00) 000-00-00', tel: '' },
   MAP_QUERY: 'Минск',
-  YANDEX_MAPS_URL: 'https://yandex.by/maps/?text=Минск',
+  YANDEX_MAPS_URL: '',
   // Маршрут до салона (при желании замените на точную ссылку из Яндекс Карт).
-  ROUTE_URL: 'https://yandex.by/maps/?mode=routes&rtext=~Минск',
-  REVIEWS_URL_SLIVKI: 'https://www.slivki.by/salony-krasoty/prestizh',
+  ROUTE_URL: '',
+  REVIEWS_URL_SLIVKI: '',
   // Ссылка на видео о салоне (YouTube, Instagram и т.д.). Пусто — кнопка «Смотреть видео» ведёт к галерее работ.
   VIDEO_URL: '',
-  REVIEWS_URL_YANDEX: 'https://yandex.by/maps/?text=Минск',
+  REVIEWS_URL_YANDEX: '',
 
   // --- Изображения ---
   // Файл логотипа (например 'logo.png'). Пусто — показывается надпись «Bella Storia».
@@ -4254,7 +4251,6 @@ const escapeHtml = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&l
 
 /* Подстановка ссылок */
 function applyLinks() {
-  $$('.js-insta').forEach(a => a.href = CONFIG.INSTAGRAM_URL);
   $$('.js-yandex').forEach(a => a.href = CONFIG.YANDEX_MAPS_URL);
   { const P=CONFIG.PHONE; if(P) $$('.js-phone').forEach(a => { if(P.label) a.textContent = P.label; if(P.tel) a.href = 'tel:' + P.tel.replace(/[^+\d]/g,''); }); }
   $$('.js-soc').forEach(a => { const u = (CONFIG.SOCIALS || {})[a.dataset.soc]; if (u) { a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; } });
@@ -4619,7 +4615,7 @@ function initForm() {
     }
     /* Защита от повторной отправки */
     try {
-      const last = parseInt(localStorage.getItem('prestizh_last_submit') || '0', 10);
+      const last = parseInt(localStorage.getItem('bella_last_submit') || '0', 10);
       if (Date.now() - last < COOLDOWN_MS) {
         showStatus('ok', 'Заявка уже отправлена. Мы скоро свяжемся с вами.');
         return;
@@ -4653,7 +4649,7 @@ function initForm() {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.ok) throw new Error('Telegram error');
-      try { localStorage.setItem('prestizh_last_submit', String(Date.now())); } catch (_) {}
+      try { localStorage.setItem('bella_last_submit', String(Date.now())); } catch (_) {}
       showStatus('ok', 'Спасибо! Мы свяжемся с вами в указанное время.');
       form.reset();
       setTopic('');
@@ -4914,13 +4910,13 @@ auto();})();</script>
   S4.addEventListener('submit',function(e){e.preventDefault();if(sending)return;show('','');
     if($('#ol-hp').value){show('ok','Спасибо! Администратор свяжется с вами и согласует дату и время.');return}
     if(!valid())return;
-    try{if(Date.now()-parseInt(localStorage.getItem('prestizh_last_submit')||'0',10)<60000){show('ok','Заявка уже отправлена. Мы скоро свяжемся с вами.');return}}catch(_){}
+    try{if(Date.now()-parseInt(localStorage.getItem('bella_last_submit')||'0',10)<60000){show('ok','Заявка уже отправлена. Мы скоро свяжемся с вами.');return}}catch(_){}
     var ph=CONFIG.PHONES.map(function(p){return '<a href="tel:'+p.tel+'">'+p.label+'</a>'}).join('');
     if(!CONFIG.TELEGRAM_BOT_TOKEN||CONFIG.TELEGRAM_BOT_TOKEN.indexOf('ВСТАВЬТЕ')===0||!CONFIG.TELEGRAM_CHAT_ID||CONFIG.TELEGRAM_CHAT_ID.indexOf('ВСТАВЬТЕ')===0){show('fail','Не удалось отправить заявку. Позвоните нам:'+ph);return}
     sending=true;btn.disabled=true;var old=btn.textContent;btn.textContent='Отправляем…';
     var text='<b>Новая запись с сайта</b>\nМастер: '+escapeHtml(sel.m.name)+'\nПроцедура: '+escapeHtml(sel.svc.name)+' ('+escapeHtml(fmt(sel.svc.price))+')\nДата и время визита: согласует администратор\nУдобно, чтобы связались: '+escapeHtml($('#ol-ctime').value)+'\nИмя: '+escapeHtml(nameI.value.trim())+'\nТелефон: '+escapeHtml(phoneI.value.trim());
     fetch('https://api.telegram.org/bot'+CONFIG.TELEGRAM_BOT_TOKEN+'/sendMessage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:CONFIG.TELEGRAM_CHAT_ID,text:text,parse_mode:'HTML'})})
-    .then(function(r){return r.json().then(function(j){if(!r.ok||!j.ok)throw 0})}).then(function(){try{localStorage.setItem('prestizh_last_submit',String(Date.now()))}catch(_){}show('ok','Спасибо! Администратор свяжется с вами и согласует дату и время.');S4.reset();btn.textContent='Заявка отправлена';setTimeout(function(){btn.disabled=false;btn.textContent=old;sending=false},60000)})
+    .then(function(r){return r.json().then(function(j){if(!r.ok||!j.ok)throw 0})}).then(function(){try{localStorage.setItem('bella_last_submit',String(Date.now()))}catch(_){}show('ok','Спасибо! Администратор свяжется с вами и согласует дату и время.');S4.reset();btn.textContent='Заявка отправлена';setTimeout(function(){btn.disabled=false;btn.textContent=old;sending=false},60000)})
     .catch(function(){show('fail','Не удалось отправить заявку. Позвоните нам:'+ph);btn.disabled=false;btn.textContent=old;sending=false})});
   /* предвыбор из карточек мастеров и коллажа */
   window.__olPick=function(n,sv){if(n&&BM.some(function(x){return x.name===n})){chooseMaster(n,false);if(sv){var b=$$('.ol-s',root).filter(function(x){return x.dataset.svc===sv})[0];if(b){chooseService(b,true);S2.hidden=true}}window.__olFocus=sel.svc?S4:S2}};
