@@ -5601,11 +5601,18 @@ a.addEventListener('click',function(e){e.preventDefault();var P=(window.CONFIG&&
  box.innerHTML='Наш номер: <b>'+lab+'</b> <button type="button" id="cbCopy" style="margin-left:8px;border:1px solid #1f1a17;background:none;padding:4px 10px;cursor:pointer;font:inherit;font-size:14px">Копировать</button>';
  document.getElementById('cbCopy').onclick=function(){try{navigator.clipboard.writeText(num).then(function(){document.getElementById('cbCopy').textContent='Скопировано'})}catch(_){}}})})();</script>
 <script>(function(){var b=document.getElementById('toTopBtn');if(!b)return;
-b.addEventListener('click',function(e){e.preventDefault();e.stopImmediatePropagation();
- var de=document.documentElement;de.style.setProperty('overflow-anchor','none','important');
- var t0=Date.now();(function go(){window.scrollTo({top:0,left:0,behavior:'instant'});
-  if((window.scrollY||de.scrollTop)>0&&Date.now()-t0<2000){requestAnimationFrame(go)}else{de.style.removeProperty('overflow-anchor')}})();
-},true)})();</script>
+b.style.touchAction='manipulation';
+function toTop(){var de=document.documentElement,bd=document.body,t0=Date.now();
+ de.style.setProperty('scroll-behavior','auto','important');bd.style.setProperty('scroll-behavior','auto','important');de.style.setProperty('overflow-anchor','none','important');
+ (function go(){
+  try{window.scrollTo({top:0,left:0,behavior:'instant'})}catch(_){try{window.scrollTo(0,0)}catch(__){}}
+  de.scrollTop=0;bd.scrollTop=0;
+  if((window.pageYOffset||de.scrollTop||bd.scrollTop)>0&&Date.now()-t0<2000){requestAnimationFrame(go)}
+  else{de.style.removeProperty('scroll-behavior');bd.style.removeProperty('scroll-behavior');de.style.removeProperty('overflow-anchor')}})()}
+var lock=0;function fire(e){if(e){e.preventDefault();e.stopImmediatePropagation()}var n=Date.now();if(n-lock<400)return;lock=n;toTop()}
+b.addEventListener('click',fire,true);
+b.addEventListener('touchend',fire,true);
+})();</script>
 <script>(function(){
 if(!matchMedia('(max-width:767px)').matches)return;
 var rv=document.querySelector('#reviews .rvx');if(!rv)return;
