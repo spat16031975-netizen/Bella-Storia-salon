@@ -2705,7 +2705,7 @@ html body #reviews .bella-review-layout,html body #reviews .bella-reviews-headin
 .rvx-stars{color:#b8872f;letter-spacing:.14em;font-size:1.05rem}
 .rvx-chap{font:600 .7rem 'Manrope',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#6b4a32}
 .rvx-quote{margin:auto 0;padding:14px 0;font:italic 500 clamp(1.2rem,1.95vw,1.85rem)/1.42 'Manrope',Georgia,serif;color:#33261f;text-wrap:pretty}
-.rvx-quote .w{display:inline-block;opacity:0;translate:0 .4em;animation:rvx-w .6s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--k) * 24ms)}
+.rvx-quote .w{display:inline-block;opacity:0;translate:0 .4em;animation:rvx-w .4s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--k) * 24ms)}
 @keyframes rvx-w{to{opacity:1;translate:0 0}}
 .rvx-who{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .rvx-av{width:60px;height:60px;border-radius:50%;overflow:hidden;border:2px solid #fff;box-shadow:0 4px 12px rgba(80,55,30,.25);flex:none}
@@ -3447,6 +3447,49 @@ html body:not(#zz):not(#zy) #masters .master .btn.btn-primary{background:#a8402f
 html body:not(#zz):not(#zy) .hero .hero-actions a.btn-primary.btn-primary{padding:0 8px!important;font-size:11.5px!important;letter-spacing:.02em!important}
 html body:not(#zz):not(#zy) .hero .hero-actions a.hero-cb.hero-cb{font-size:12px!important;letter-spacing:0!important;margin-left:10px!important}
 }
+
+/* ===== ПРАВКИ ПО СПИСКУ АРТ-ДИРЕКТОРА ===== */
+/* 1. Без анимированного золота и градиентов */
+html body:not(#zz):not(#zy) .bella-orbit-ring,html body:not(#zz):not(#zy) .blob,html body:not(#zz):not(#zy) .sb,html body:not(#zz):not(#zy) h2,html body:not(#zz):not(#zy) .pp-script,html body:not(#zz):not(#zy) .btn,html body:not(#zz):not(#zy) .hero-frame{animation:none!important}
+html body:not(#zz):not(#zy) .calc{background:#f0e4d5!important;background-image:none!important}
+html body:not(#zz):not(#zy) .master-ph,html body:not(#zz):not(#zy) .hero-frame{background:#eadccb!important;background-image:none!important}
+html body:not(#zz):not(#zy) .trust-num{background:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;color:#8a5a3f!important;-webkit-text-fill-color:#8a5a3f!important}
+html body:not(#zz):not(#zy) .ol-arr{background:#e9d8c4!important;background-image:none!important}
+html body:not(#zz):not(#zy) .mb-filter.on,html body:not(#zz):not(#zy) .wg-more{background-image:none!important}
+html body:not(#zz):not(#zy) .wr-info{background:rgba(20,12,8,.55)!important;background-image:none!important}
+/* 3. Главный заголовок */
+html body:not(#zz):not(#zy) .hero h1.bella-stagger-title{font-size:clamp(48px,5.4vw,80px)!important;line-height:1.04!important}
+html body:not(#zz):not(#zy) .hero h1.bella-stagger-title span:nth-child(2){margin-left:.2em!important;padding-left:0!important}
+html body:not(#zz):not(#zy) .hero h1.bella-stagger-title span:nth-child(3){margin-left:.4em!important;padding-left:0!important}
+/* 4. Основной текст */
+html body:not(#zz):not(#zy) body{color:#292724!important}
+html body:not(#zz):not(#zy) .lead,html body:not(#zz):not(#zy) .hero .lead,html body:not(#zz):not(#zy) .section-head p:not(.demo-note),html body:not(#zz):not(#zy) .master-text,html body:not(#zz):not(#zy) .trust p,html body:not(#zz):not(#zy) #callback p,html body:not(#zz):not(#zy) .bella-team-lead,html body:not(#zz):not(#zy) .bk-lead,html body:not(#zz):not(#zy) .ros-info p{color:#292724!important;font-size:max(16px,1rem)!important;line-height:1.6!important}
+html body:not(#zz):not(#zy) .hero .lead{font-size:clamp(17px,1.4vw,19px)!important}
+/* 5. Ширина и поля */
+@media (min-width:768px){html body:not(#zz):not(#zy) .container{max-width:1296px!important;padding-left:48px!important;padding-right:48px!important}}
+@media (max-width:767px){html body:not(#zz):not(#zy) .container{padding-left:20px!important;padding-right:20px!important}
+html body:not(#zz):not(#zy) .hero h1.bella-stagger-title{font-size:clamp(38px,11.4vw,46px)!important}
+html body:not(#zz):not(#zy) .hero h1.bella-stagger-title span:nth-child(2){margin-left:.15em!important}html body:not(#zz):not(#zy) .hero h1.bella-stagger-title span:nth-child(3){margin-left:.3em!important}
+html body:not(#zz):not(#zy) .hero .bella-photo{height:200px!important}}
+/* 6-8. Показ «лучших» + кнопка «показать все» */
+html body:not(#zz):not(#zy) .wg-more,html body:not(#zz):not(#zy) .ros-more,html body:not(#zz):not(#zy) .rvx-more{display:block;margin:14px auto 0;padding:11px 24px;border:1px solid #1f1a17;background:transparent;color:#1f1a17;font:600 13px 'Manrope',sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+html body:not(#zz):not(#zy) .wg-more:hover,html body:not(#zz):not(#zy) .ros-more:hover,html body:not(#zz):not(#zy) .rvx-more:hover{background:#1f1a17;color:#fff}
+html body:not(#zz):not(#zy) .wg-more[hidden],html body:not(#zz):not(#zy) .ros-more[hidden],html body:not(#zz):not(#zy) .rvx-more[hidden]{display:none!important}
+html body:not(#zz):not(#zy) .ros-list li.ros-x,html body:not(#zz):not(#zy) .rvx-list li.rvx-x{display:none!important}
+@media (max-width:767px){html body:not(#zz):not(#zy) .ros-more,html body:not(#zz):not(#zy) .rvx-more{display:none!important}}
+/* 9. Анимации появления: 400 мс, смещение до 16 px */
+html body:not(#zz):not(#zy) .reveal{transform:translateY(16px)!important;transition:opacity .4s ease,transform .4s ease!important}
+html body:not(#zz):not(#zy) .reveal.in{transform:none!important}
+/* 10. Подвал */
+html body:not(#zz):not(#zy) .site-footer .footer-brand{display:none}
+html body:not(#zz):not(#zy) .site-footer .owner{display:flex;flex-wrap:wrap;gap:4px 22px;margin:0 0 14px}
+html body:not(#zz):not(#zy) .site-footer .owner p{margin:0;font-size:13px;color:#6b5d52}
+html body:not(#zz):not(#zy) .site-footer .copy{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:13px}
+@media (min-width:901px){
+html body:not(#zz):not(#zy) .hero .bella-photo{width:46vw!important}
+html body:not(#zz):not(#zy) .hero .hero-text{margin-left:0!important;max-width:min(640px,calc(54vw - 150px))!important;width:auto!important}
+html body:not(#zz):not(#zy) .hero h1.bella-stagger-title{width:auto!important;max-width:none!important;padding-right:0!important}
+}
 </style>
 </head>
 <body>
@@ -3998,7 +4041,7 @@ html body:not(#zz):not(#zy) .hero .hero-actions a.hero-cb.hero-cb{font-size:12px
 <div class="mobile-bar">
   
   
-  <a class="btn btn-primary" href="#online">Записаться</a>
+  <a class="btn btn-primary" href="#online">Выбрать мастера</a>
 </div>
 
 <!-- ПОЛИТИКИ (окно и тексты) -->
@@ -5130,7 +5173,10 @@ auto();})();</script>
   var cnt2=function(s){return all.filter(function(i){return i.cat==='nails'&&(!s||i.sub===s)}).length};
   subRow.innerHTML='<button type="button" class="mb-sub on" data-s="">Все ногти <small>'+cnt2('')+'</small></button><button type="button" class="mb-sub" data-s="mani">Маникюр <small>'+cnt2('mani')+'</small></button><button type="button" class="mb-sub" data-s="pedi">Педикюр <small>'+cnt2('pedi')+'</small></button>';
   var fl=document.querySelector('.mb-filters');fl.parentNode.insertBefore(subRow,fl.nextSibling);
-  function setFilter(f,s){filter=f;subRow.hidden=f!=='nails';[].slice.call(subRow.children).forEach(function(b){b.classList.toggle('on',(b.dataset.s||'')===(s||''))});list=all.filter(function(it){return (f==='all'||it.cat===f)&&(!s||it.sub===s)});if(!list.length)list=all.slice();drawThumbs();show(0,true);restart()}
+  function wgBest(l){var g={},o=[];l.forEach(function(it){(g[it.cat]=g[it.cat]||[]).push(it)});var ks=Object.keys(g),k=0;while(o.length<10&&ks.some(function(c){return g[c].length})){var c=ks[k%ks.length];if(g[c].length)o.push(g[c].shift());k++}return o}
+  var wgMore=document.createElement('button');wgMore.type='button';wgMore.className='wg-more';wg.insertAdjacentElement('afterend',wgMore);
+  wgMore.addEventListener('click',function(){window.__wgAll=!window.__wgAll;setFilter(filter,window.__wgSub)});
+  function setFilter(f,s){filter=f;subRow.hidden=f!=='nails';[].slice.call(subRow.children).forEach(function(b){b.classList.toggle('on',(b.dataset.s||'')===(s||''))});list=all.filter(function(it){return (f==='all'||it.cat===f)&&(!s||it.sub===s)});if(!list.length)list=all.slice();window.__wgSub=s;if(f==='all'&&!s&&!window.__wgAll&&list.length>10)list=wgBest(list);wgMore.hidden=!(f==='all'&&!s&&all.length>10);wgMore.textContent=window.__wgAll?'Показать только лучшие работы':'Показать все '+all.length+' работ';drawThumbs();show(0,true);restart()}
   th.addEventListener('click',function(e){var b=e.target.closest('.wg-th');if(b){show(+b.dataset.i);restart()}});
   wg.querySelector('.wg-prev').addEventListener('click',function(e){e.stopPropagation();show(cur-1);restart()});
   wg.querySelector('.wg-next').addEventListener('click',function(e){e.stopPropagation();show(cur+1);restart()});
@@ -5570,7 +5616,7 @@ inp.addEventListener('beforeinput',function(e){
 });
 inp.addEventListener('input',chk);inp.addEventListener('blur',chk);})();</script><script>(function(){var ph=document.querySelector('.hero .bella-photo'),pl=ph&&ph.querySelector('.hero-script');if(!pl)return;
 function al(){if(innerWidth<=700){pl.style.removeProperty('right');return}
- var edge=(innerWidth+Math.min(1180,innerWidth-56))/2,r=ph.getBoundingClientRect().right;pl.style.setProperty('right',Math.max(8,Math.round(r-edge))+'px','important')}
+ var edge=(innerWidth+Math.min(1200,innerWidth-96))/2,r=ph.getBoundingClientRect().right;pl.style.setProperty('right',Math.max(8,Math.round(r-edge))+'px','important')}
 al();addEventListener('resize',al);addEventListener('load',al);setTimeout(al,400);setTimeout(al,1500)})();</script><script>(function(){
 function wide(){[].slice.call(document.querySelectorAll('#olMasters .ol-m')).forEach(function(b){var t=b.querySelector('small');if(t&&t.textContent.length>20)b.classList.add('ol-m--wide')})}
 wide();var box=document.getElementById('olMasters');if(box&&window.MutationObserver)new MutationObserver(wide).observe(box,{childList:true});
@@ -5680,6 +5726,14 @@ window.addEventListener('popstate',function(){
  if(skip){skip=false;return}
  if(pushed){pushed=false;top();setTimeout(function(){if(y()>40)top()},120)}
 });
+})();</script>
+<script>(function(){
+function more(listSel,cls,btnCls,lim,label,wrap){var list=document.querySelector(listSel);if(!list)return;var open=false,btn=document.createElement('button');btn.type='button';btn.className=btnCls;(wrap?wrap(list):list.parentNode).appendChild(btn);
+ function apply(){var vis=0;[].forEach.call(list.children,function(li){li.classList.remove(cls);if(li.hidden)return;vis++;if(!open&&vis>lim)li.classList.add(cls)});btn.hidden=vis<=lim;btn.textContent=open?'Свернуть':label(vis)}
+ btn.addEventListener('click',function(){open=!open;apply()});
+ if(window.MutationObserver)new MutationObserver(apply).observe(list,{subtree:true,attributes:true,attributeFilter:['hidden']});apply()}
+more('#masters .ros-list','ros-x','ros-more',6,function(n){return 'Показать всех мастеров ('+n+')'});
+more('#reviews .rvx-list','rvx-x','rvx-more',4,function(n){return 'Показать все отзывы ('+n+')'});
 })();</script>
 </body>
 </html>
