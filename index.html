@@ -3505,6 +3505,7 @@ html body:not(#zz):not(#zy) .mobile-bar .btn{flex:1 1 0!important;min-width:0!im
 @media (max-width:767px){html body:not(#zz):not(#zy) .hero h1,html body:not(#zz):not(#zy) .hero h1 span,html body:not(#zz):not(#zy) .hero h1 i{font-size:min(8.6vw,35px)!important}}
 @media (max-width:767px){html body:not(#zz):not(#zy) .hero .hero-actions a.btn-primary{display:none!important}
 html body:not(#zz):not(#zy) .hero .hero-actions a.hero-cb.hero-cb{margin:0 18px 0 0!important}}
+html body:not(#zz):not(#zy) .wg-more{display:none!important}
 </style>
 </head>
 <body>
@@ -5190,7 +5191,7 @@ auto();})();</script>
   function wgBest(l){var g={},o=[];l.forEach(function(it){(g[it.cat]=g[it.cat]||[]).push(it)});var ks=Object.keys(g),k=0;while(o.length<10&&ks.some(function(c){return g[c].length})){var c=ks[k%ks.length];if(g[c].length)o.push(g[c].shift());k++}return o}
   var wgMore=document.createElement('button');wgMore.type='button';wgMore.className='wg-more';wg.insertAdjacentElement('afterend',wgMore);
   wgMore.addEventListener('click',function(){window.__wgAll=!window.__wgAll;setFilter(filter,window.__wgSub)});
-  function setFilter(f,s){filter=f;subRow.hidden=f!=='nails';[].slice.call(subRow.children).forEach(function(b){b.classList.toggle('on',(b.dataset.s||'')===(s||''))});list=all.filter(function(it){return (f==='all'||it.cat===f)&&(!s||it.sub===s)});if(!list.length)list=all.slice();window.__wgSub=s;if(f==='all'&&!s&&!window.__wgAll&&list.length>10)list=wgBest(list);wgMore.hidden=!(f==='all'&&!s&&all.length>10);wgMore.textContent=window.__wgAll?'Показать только лучшие работы':'Показать все '+all.length+' работ';drawThumbs();show(0,true);restart()}
+  function setFilter(f,s){filter=f;subRow.hidden=f!=='nails';[].slice.call(subRow.children).forEach(function(b){b.classList.toggle('on',(b.dataset.s||'')===(s||''))});list=all.filter(function(it){return (f==='all'||it.cat===f)&&(!s||it.sub===s)});if(!list.length)list=all.slice();window.__wgSub=s;wgMore.hidden=true;drawThumbs();show(0,true);restart()}
   th.addEventListener('click',function(e){var b=e.target.closest('.wg-th');if(b){show(+b.dataset.i);restart()}});
   wg.querySelector('.wg-prev').addEventListener('click',function(e){e.stopPropagation();show(cur-1);restart()});
   wg.querySelector('.wg-next').addEventListener('click',function(e){e.stopPropagation();show(cur+1);restart()});
