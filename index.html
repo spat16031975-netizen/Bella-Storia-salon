@@ -3490,6 +3490,17 @@ html body:not(#zz):not(#zy) .hero .bella-photo{width:46vw!important}
 html body:not(#zz):not(#zy) .hero .hero-text{margin-left:0!important;max-width:min(640px,calc(54vw - 150px))!important;width:auto!important}
 html body:not(#zz):not(#zy) .hero h1.bella-stagger-title{width:auto!important;max-width:none!important;padding-right:0!important}
 }
+
+/* быстрый доступ: «Перезвоните мне» */
+html body:not(#zz):not(#zy) .qa-cb{position:fixed;right:84px;bottom:24px;z-index:60;height:48px;display:inline-flex;align-items:center;gap:8px;padding:0 18px;background:#fffaf3;color:#1f1a17;border:1px solid rgba(122,87,49,.35);box-shadow:0 6px 18px rgba(60,40,20,.12);font:600 13px/1 'Inter',system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+html body:not(#zz):not(#zy) .qa-cb:hover{background:#1f1a17;color:#fff}
+@media (max-width:767px){html body:not(#zz):not(#zy) .qa-cb{display:none}
+html body:not(#zz):not(#zy) .mobile-bar .qa-cb-m{background:#fffaf3!important;color:#1f1a17!important;border:1px solid #1f1a17!important;box-shadow:none!important;flex:1 1 auto!important}}
+@media (min-width:768px){.mobile-bar .qa-cb-m{display:none}}
+@media (max-width:767px){html body:not(#zz):not(#zy) .mobile-bar a.qa-cb-m{display:inline-flex!important;align-items:center;justify-content:center}
+html body:not(#zz):not(#zy) .hero h1,html body:not(#zz):not(#zy) .hero h1 span,html body:not(#zz):not(#zy) .hero h1 i{font-size:min(9.4vw,40px)!important}}
+@media (max-width:767px){html body:not(#zz):not(#zy) .mobile-bar{justify-content:stretch;gap:8px!important;padding-left:10px!important;padding-right:10px!important}
+html body:not(#zz):not(#zy) .mobile-bar .btn{flex:1 1 0!important;min-width:0!important;max-width:none!important;padding:6px 4px!important;font-size:.68rem!important;letter-spacing:.04em!important;white-space:nowrap;text-align:center}}
 </style>
 </head>
 <body>
@@ -3564,7 +3575,7 @@ html body:not(#zz):not(#zy) .hero h1.bella-stagger-title{width:auto!important;ma
       <div class="hero-actions">
       <a class="btn btn-primary" href="#online">Выбрать мастера</a>
       
-      <a class="hero-cb btn" href="#callback">Перезвоните мне</a><a href="#online" class="bella-orbit-offer" aria-label="Скидка 10 процентов на первый визит — перейти к записи"><span class="bella-orbit-ring" aria-hidden="true"></span><span class="bella-orbit-text"><small>ПЕРВЫЙ ВИЗИТ</small><strong>−10%</strong><small>ДЛЯ ТЕБЯ</small></span></a>
+      <a class="hero-cb btn" href="#services">Услуги и цены</a><a href="#online" class="bella-orbit-offer" aria-label="Скидка 10 процентов на первый визит — перейти к записи"><span class="bella-orbit-ring" aria-hidden="true"></span><span class="bella-orbit-text"><small>ПЕРВЫЙ ВИЗИТ</small><strong>−10%</strong><small>ДЛЯ ТЕБЯ</small></span></a>
     </div>
     </div>
     <div class="hero-art reveal">
@@ -4039,9 +4050,8 @@ html body:not(#zz):not(#zy) .hero h1.bella-stagger-title{width:auto!important;ma
 
 <!-- Фиксированная панель на мобильных -->
 <div class="mobile-bar">
-  
-  
   <a class="btn btn-primary" href="#online">Выбрать мастера</a>
+  <a class="btn qa-cb-m" href="#callback">Перезвоните мне</a>
 </div>
 
 <!-- ПОЛИТИКИ (окно и тексты) -->
@@ -5516,6 +5526,7 @@ auto();})();</script>
 (function(){var f=document.getElementById('silkFollow');if(!f||(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches))return;
 addEventListener('pointermove',function(e){if(e.pointerType==='touch')return;f.style.left=(e.clientX/innerWidth*100)+'%';f.style.top=(e.clientY/innerHeight*100)+'%'},{passive:true})})();
 </script>
+<a class="qa-cb" href="#callback" aria-label="Перезвоните мне"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Перезвоните мне</span></a>
 <button type="button" id="toTopBtn" class="to-top" aria-label="Наверх, на первую страницу"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button><script>(function(){var b=document.getElementById("toTopBtn");if(!b)return;function u(){b.classList.toggle("show",(window.scrollY||document.documentElement.scrollTop)>400)}window.addEventListener("scroll",u,{passive:true});u();b.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})})})();</script><script>(function(){
 var IDLE=20*1000,timers=new WeakMap();
 function forms(){return [].slice.call(document.querySelectorAll('#bookingForm,#olS4'))}
