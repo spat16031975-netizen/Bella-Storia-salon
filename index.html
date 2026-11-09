@@ -2323,7 +2323,7 @@ html body .hero .bella-photo .hero-script{position:absolute!important;z-index:3!
 @media (max-width:900px){
  html body .hero .hero-top{display:block!important;min-height:0!important}
  html body .hero .bella-photo{position:relative!important;width:100%!important;height:min(54svh,460px)!important;right:auto!important}
- html body .hero .bella-photo img{object-position:50% 18%!important;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent)!important;mask-image:linear-gradient(180deg,#000 82%,transparent)!important}
+ html body .hero .bella-photo img{object-position:50% 12%!important;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent)!important;mask-image:linear-gradient(180deg,#000 82%,transparent)!important}
  html body .hero .hero-text{max-width:none!important;padding:22px 20px 8px!important}
  html body .hero .hero-text h1.bella-stagger-title{font-size:clamp(30px,8.6vw,46px)!important}
  html body .hero .bella-photo .hero-script{right:14px!important;left:14px!important;bottom:26px!important;padding:12px 16px!important;font-size:clamp(14px,4.2vw,18px)!important;white-space:normal!important}
@@ -3299,6 +3299,102 @@ html body:not(#zz):not(#zy) .hero .bella-orbit-offer{flex:0 0 auto!important}htm
 html body:not(#zz):not(#zy) .hero .hero-actions a.hero-cb.hero-cb{padding:0 0 4px!important;min-height:0!important;height:auto!important;margin-left:16px!important;border-radius:0!important}
 @media (max-width:767px){html body:not(#zz):not(#zy) .hero .hero-actions a.hero-cb.hero-cb{margin:0!important;padding:10px 0!important;width:100%!important}}
 html body:not(#zz):not(#zy) .hero .hero-actions a.hero-cb.hero-cb{order:3;flex:0 0 auto!important;white-space:nowrap}html body:not(#zz):not(#zy) .hero .hero-actions .bella-orbit-offer{order:2;flex:0 0 auto!important}html body:not(#zz):not(#zy) .hero .hero-actions{max-width:540px!important}
+
+/* ===== MOBILE: каждый блок на одном экране ===== */
+@media (max-width:767px){
+html body:not(#zz):not(#zy) #services,html body:not(#zz):not(#zy) #works,html body:not(#zz):not(#zy) #masters,html body:not(#zz):not(#zy) #reviews{padding:16px 0 18px!important;min-height:0!important}
+html body:not(#zz):not(#zy) #services .section-head,html body:not(#zz):not(#zy) #works .section-head,html body:not(#zz):not(#zy) #masters .section-head,html body:not(#zz):not(#zy) #reviews .section-head{margin:0 0 10px!important;padding:0!important}
+html body:not(#zz):not(#zy) #services .section-head h2,html body:not(#zz):not(#zy) #works .section-head h2,html body:not(#zz):not(#zy) #masters .section-head h2,html body:not(#zz):not(#zy) #reviews .section-head h2{font-size:26px!important;line-height:1.1!important;margin:0!important}
+html body:not(#zz):not(#zy) #services .demo-note,html body:not(#zz):not(#zy) #works .demo-note,html body:not(#zz):not(#zy) #masters .demo-note,html body:not(#zz):not(#zy) #reviews .demo-note,html body:not(#zz):not(#zy) .bella-team-lead,html body:not(#zz):not(#zy) .bella-team-topline{display:none!important}
+/* HERO */
+html body:not(#zz):not(#zy) .hero .bella-photo{height:230px!important}
+html body:not(#zz):not(#zy) .hero .bella-photo img{height:100%!important;object-fit:cover!important;object-position:50% 12%!important}
+html body:not(#zz):not(#zy) .hero .hero-script{display:none!important;left:0!important;right:0!important;bottom:0!important;width:auto!important;max-width:none!important;margin:0!important;padding:10px 16px!important}
+html body:not(#zz):not(#zy) .hero .hero-script,html body:not(#zz):not(#zy) .hero .hero-script *{font-size:20px!important;line-height:1.2!important}
+html body:not(#zz):not(#zy) .hero .hero-grid{margin:0!important}
+html body:not(#zz):not(#zy) .hero .hero-text{padding:16px 20px 8px!important}
+html body:not(#zz):not(#zy) .hero h1.bella-stagger-title{margin:0 0 12px!important}
+html body:not(#zz):not(#zy) .hero .lead{font-size:15.5px!important;line-height:1.45!important;margin:0 0 14px!important}
+html body:not(#zz):not(#zy) .hero .hero-actions{display:flex!important;flex-wrap:wrap!important;gap:10px!important;align-items:center!important}
+html body:not(#zz):not(#zy) .hero .hero-actions a.btn-primary,html body:not(#zz):not(#zy) .hero .hero-actions a.btn-soft{flex:1 1 calc(50% - 5px)!important;width:auto!important;min-height:50px!important;padding:0 6px!important;font-size:12px!important;letter-spacing:.05em!important;text-align:center;justify-content:center}
+html body:not(#zz):not(#zy) .hero .hero-actions .bella-orbit-offer{flex:0 0 auto!important;order:3!important}
+html body:not(#zz):not(#zy) .hero .hero-actions a.hero-cb.hero-cb{flex:1 1 auto!important;width:auto!important;order:4!important;margin:0!important;padding:8px 0!important;text-align:right!important;text-decoration:underline!important;font-size:14px!important}
+}
+
+@media (max-width:767px){
+/* SERVICES */
+html body:not(#zz):not(#zy) #services .section-head h2,html body:not(#zz):not(#zy) #services .section-head h2 *,html body:not(#zz):not(#zy) #works .section-head h2,html body:not(#zz):not(#zy) #works .section-head h2 *,html body:not(#zz):not(#zy) #masters .section-head h2,html body:not(#zz):not(#zy) #reviews .section-head h2{font-size:25px!important;line-height:1.1!important;white-space:normal}
+html body:not(#zz):not(#zy) #services .svc-cats,html body:not(#zz):not(#zy) #services .svc-subs{flex-wrap:nowrap!important;overflow-x:auto!important;gap:8px!important;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 0 6px!important;margin:0!important}
+html body:not(#zz):not(#zy) #services .svc-cats::-webkit-scrollbar,html body:not(#zz):not(#zy) #services .svc-subs::-webkit-scrollbar{display:none}
+html body:not(#zz):not(#zy) #services .svc-cats>*,html body:not(#zz):not(#zy) #services .svc-subs>*{flex:0 0 auto!important;white-space:nowrap!important}
+html body:not(#zz):not(#zy) #services .svc-rows{max-height:calc(100svh - 430px)!important;min-height:150px;overflow-y:auto!important;-webkit-overflow-scrolling:touch}
+html body:not(#zz):not(#zy) #services .svc-rows li{min-height:0!important}
+html body:not(#zz):not(#zy) #services #calc .calc-bg{display:none!important}
+html body:not(#zz):not(#zy) #services #calc{min-height:0!important}
+html body:not(#zz):not(#zy) #services #calc .calc-in{padding:10px 14px!important;gap:6px!important}
+html body:not(#zz):not(#zy) #services #calc .calc-in *{margin-top:0!important}
+/* REVIEWS */
+html body:not(#zz):not(#zy) #reviews .rvx{display:block!important}
+html body:not(#zz):not(#zy) #reviews .rvx-toc{display:none!important}
+html body:not(#zz):not(#zy) #reviews .rvx-main{padding:16px 16px 12px!important;border-radius:0!important}
+html body:not(#zz):not(#zy) #reviews .rvx-mark{font-size:6rem!important}
+html body:not(#zz):not(#zy) #reviews .rvx-chap{display:none!important}
+html body:not(#zz):not(#zy) #reviews .rvx-quote{font-size:17px!important;line-height:1.45!important;margin:10px 0!important;padding:0!important;min-height:calc(100svh - 470px)}
+html body:not(#zz):not(#zy) #reviews .rvx-av{width:46px!important;height:46px!important}
+html body:not(#zz):not(#zy) #reviews .rvx-demo{margin:10px 0 0!important}
+html body:not(#zz):not(#zy) #rvCats{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 0 10px;padding:0 0 4px}
+html body:not(#zz):not(#zy) #rvCats::-webkit-scrollbar{display:none}
+html body:not(#zz):not(#zy) #rvCats button{flex:0 0 auto;appearance:none;border:1px solid #1f1a17;background:transparent;color:#1f1a17;padding:9px 14px;font:600 12px/1 'Manrope',sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+html body:not(#zz):not(#zy) #rvCats button[aria-pressed="true"]{background:#1f1a17;color:#fff}
+html body:not(#zz):not(#zy) #rvCnt{font:600 13px 'Manrope',sans-serif;color:#6b4a32;min-width:42px;text-align:center}
+/* MASTERS: листалка */
+html body:not(#zz):not(#zy) #masters .ros{display:none!important}
+html body:not(#zz):not(#zy) #masters .masters-wrap{display:block!important;position:relative!important;height:auto!important;opacity:1!important;visibility:visible!important;overflow:visible!important}
+html body:not(#zz):not(#zy) #masters .masters-track{display:flex!important;overflow-x:auto!important;scroll-snap-type:x mandatory!important;gap:0!important;padding:0!important;margin:0!important;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+html body:not(#zz):not(#zy) #masters .masters-track::-webkit-scrollbar{display:none}
+html body:not(#zz):not(#zy) #masters .master{flex:0 0 100%!important;width:100%!important;max-width:100%!important;scroll-snap-align:center;display:block!important;position:relative;padding:0!important;margin:0!important;background:none!important;border:0!important;box-shadow:none!important;transform:none!important;opacity:1!important}
+html body:not(#zz):not(#zy) #masters .master-ph{height:clamp(300px,calc(100svh - 360px),470px)!important;width:100%!important;aspect-ratio:auto!important;position:relative;overflow:hidden}
+html body:not(#zz):not(#zy) #masters .master-ph img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:50% 20%!important}
+html body:not(#zz):not(#zy) #masters .master-ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(to top,rgba(20,14,10,.78),rgba(20,14,10,0));pointer-events:none}
+html body:not(#zz):not(#zy) #masters .bella-master-meta{display:none!important}
+html body:not(#zz):not(#zy) #masters .master h3{position:relative;z-index:2;margin:-68px 0 0!important;padding:0 16px!important;color:#fff!important;font-size:30px!important;line-height:1.1!important;text-shadow:0 2px 10px rgba(0,0,0,.45)}
+html body:not(#zz):not(#zy) #masters .master .master-role{position:relative;z-index:2;margin:2px 0 0!important;padding:0 16px 14px!important;color:rgba(255,255,255,.92)!important;font-size:14px!important;letter-spacing:.04em}
+html body:not(#zz):not(#zy) #masters .master .master-text{margin:10px 0 8px!important;font-size:14.5px!important;line-height:1.4!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+html body:not(#zz):not(#zy) #masters .master .btn{width:100%!important;min-height:46px!important;margin:0!important}
+html body:not(#zz):not(#zy) #masters .mc-nav{display:grid!important;position:absolute!important;top:calc(clamp(300px,calc(100svh - 360px),470px)/2 - 20px)!important;z-index:5;width:38px!important;height:38px!important}
+html body:not(#zz):not(#zy) #masters .mc-prev{left:8px!important;right:auto!important}
+html body:not(#zz):not(#zy) #masters .mc-next{right:8px!important;left:auto!important}
+}
+
+@media (max-width:767px){
+html body:not(#zz):not(#zy) #services .section-head h2::before,html body:not(#zz):not(#zy) #services .section-head h2::after,html body:not(#zz):not(#zy) #works .section-head h2::before,html body:not(#zz):not(#zy) #works .section-head h2::after,html body:not(#zz):not(#zy) #masters .section-head h2::before,html body:not(#zz):not(#zy) #masters .section-head h2::after,html body:not(#zz):not(#zy) #reviews .section-head h2::before,html body:not(#zz):not(#zy) #reviews .section-head h2::after{display:none!important}
+html body:not(#zz):not(#zy) #services #svc{grid-template-columns:minmax(0,1fr)!important;max-width:100%!important}
+html body:not(#zz):not(#zy) #services .svc-main,html body:not(#zz):not(#zy) #services #calc,html body:not(#zz):not(#zy) #services .price-panel{min-width:0!important;max-width:100%!important}
+html body:not(#zz):not(#zy) #masters .masters-track,html body:not(#zz):not(#zy) #masters .masters-wrap{perspective:none!important;transform:none!important}
+html body:not(#zz):not(#zy) #masters .master,html body:not(#zz):not(#zy) #masters .master *{rotate:none!important;translate:none!important;scale:none!important;filter:none!important}
+html body:not(#zz):not(#zy) #masters .master,html body:not(#zz):not(#zy) #masters .master-ph,html body:not(#zz):not(#zy) #masters .master h3,html body:not(#zz):not(#zy) #masters .master-role,html body:not(#zz):not(#zy) #masters .master-text,html body:not(#zz):not(#zy) #masters .master .btn{transform:none!important;animation:none!important}
+html body:not(#zz):not(#zy) #masters::before,html body:not(#zz):not(#zy) #masters::after,html body:not(#zz):not(#zy) #masters .container::before,html body:not(#zz):not(#zy) #masters .container::after{display:none!important}
+html body:not(#zz):not(#zy) #reviews .rvx-quote{min-height:190px!important}
+}
+
+@media (max-width:767px){
+html body:not(#zz):not(#zy) #works .section-head h2,html body:not(#zz):not(#zy) #masters .section-head h2,html body:not(#zz):not(#zy) #services .section-head h2,html body:not(#zz):not(#zy) #reviews .section-head h2{max-width:none!important;width:100%!important;display:block!important;text-align:center!important}
+html body:not(#zz):not(#zy) #works .wg{display:block!important}
+html body:not(#zz):not(#zy) #works .wg-photo{height:clamp(260px,calc(100svh - 400px),450px)!important;aspect-ratio:auto!important;min-height:0!important}
+html body:not(#zz):not(#zy) #works .wg-photo img{height:100%!important}
+html body:not(#zz):not(#zy) #works .wg-side,html body:not(#zz):not(#zy) #works .wg-info{min-height:0!important;max-height:104px;overflow:hidden}
+html body:not(#zz):not(#zy) #works .mb-filters{margin:0 0 10px!important}
+html body:not(#zz):not(#zy) #masters .master-ph{height:clamp(300px,calc(100svh - 400px),440px)!important}
+html body:not(#zz):not(#zy) #masters .mc-nav{top:calc(clamp(300px,calc(100svh - 400px),440px)/2 - 20px)!important}
+}
+
+@media (max-width:767px){
+html body:not(#zz):not(#zy) #works .wg-svc,html body:not(#zz):not(#zy) #works .wg-master{display:none!important}
+html body:not(#zz):not(#zy) #works .wg-cat{font-size:11px!important}
+html body:not(#zz):not(#zy) #works .wg-title{font-size:22px!important;margin:2px 0 0!important;line-height:1.15!important}
+html body:not(#zz):not(#zy) #works .wg-side,html body:not(#zz):not(#zy) #works .wg-info{max-height:none!important;overflow:visible!important}
+html body:not(#zz):not(#zy) #works .wg-photo{height:clamp(260px,calc(100svh - 390px),450px)!important}
+}
 </style>
 </head>
 <body>
@@ -5481,5 +5577,40 @@ a.addEventListener('click',function(e){e.preventDefault();var P=(window.CONFIG&&
  var box=document.getElementById('cbTelBox');if(!box){box=document.createElement('p');box.id='cbTelBox';box.style.cssText='margin:12px 0 0;font-size:18px;color:#1f1a17';a.parentNode.appendChild(box)}
  box.innerHTML='Наш номер: <b>'+lab+'</b> <button type="button" id="cbCopy" style="margin-left:8px;border:1px solid #1f1a17;background:none;padding:4px 10px;cursor:pointer;font:inherit;font-size:14px">Копировать</button>';
  document.getElementById('cbCopy').onclick=function(){try{navigator.clipboard.writeText(num).then(function(){document.getElementById('cbCopy').textContent='Скопировано'})}catch(_){}}})})();</script>
+<script>(function(){var b=document.getElementById('toTopBtn');if(!b)return;
+b.addEventListener('click',function(e){e.preventDefault();e.stopImmediatePropagation();
+ var de=document.documentElement;de.style.setProperty('overflow-anchor','none','important');
+ var t0=Date.now();(function go(){window.scrollTo({top:0,left:0,behavior:'instant'});
+  if((window.scrollY||de.scrollTop)>0&&Date.now()-t0<2000){requestAnimationFrame(go)}else{de.style.removeProperty('overflow-anchor')}})();
+},true)})();</script>
+<script>(function(){
+if(!matchMedia('(max-width:767px)').matches)return;
+var rv=document.querySelector('#reviews .rvx');if(!rv)return;
+function cat(t){t=(t||'').toLowerCase();
+ if(/ногт|маник|педик|гель/.test(t))return 'Ногти';
+ if(/бров|ресниц|лэш|перманент/.test(t))return 'Брови и ресницы';
+ if(/макияж/.test(t))return 'Макияж';
+ return 'Волосы'}
+var rows=[].slice.call(rv.querySelectorAll('.rvx-row')),cats={};
+rows.forEach(function(r,i){var c=cat((r.querySelector('.rvx-sv')||{}).textContent);r.dataset.cat=c;(cats[c]=cats[c]||[]).push(i)});
+var order=['Все','Волосы','Брови и ресницы','Макияж','Ногти'].filter(function(c){return c==='Все'||cats[c]});
+var bar=document.createElement('div');bar.id='rvCats';bar.setAttribute('role','group');bar.setAttribute('aria-label','Категория отзывов');
+var cur='Все';
+order.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c;b.setAttribute('aria-pressed',c===cur?'true':'false');b.dataset.c=c;bar.appendChild(b)});
+rv.parentNode.insertBefore(bar,rv);
+var ctl=rv.querySelector('.rvx-ctl'),cnt=document.createElement('span');cnt.id='rvCnt';if(ctl)ctl.insertBefore(cnt,ctl.children[1]||null);
+function list(){return cur==='Все'?rows.map(function(_,i){return i}):cats[cur]}
+function now(){var r=rows.filter(function(x){return x.getAttribute('aria-current')==='true'})[0];return r?+r.dataset.i:0}
+function upd(){var l=list(),k=l.indexOf(now());cnt.textContent=(k<0?1:k+1)+' / '+l.length}
+function go(i){rows[i].click();setTimeout(upd,50)}
+bar.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cur=b.dataset.c;[].forEach.call(bar.children,function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});go(list()[0])});
+rv.addEventListener('click',function(e){var a=e.target.closest('.rvx-ar');if(!a)return;e.preventDefault();e.stopImmediatePropagation();
+ var l=list(),k=l.indexOf(now());if(k<0)k=0;k=(k+(a.classList.contains('rvx-p')?-1:1)+l.length)%l.length;go(l[k])},true);
+if(window.MutationObserver){var busy=false;new MutationObserver(function(){if(busy)return;busy=true;var l=list(),n=now();if(l.indexOf(n)<0){var nx=l.filter(function(i){return i>n})[0];if(nx==null)nx=l[0];rows[nx].click()}upd();setTimeout(function(){busy=false},120)}).observe(rv.querySelector('.rvx-main'),{childList:true,subtree:true,characterData:true})}
+upd();
+})();</script>
+<script>(function(){var mq=matchMedia('(max-width:767px)');
+function fix(){var on=mq.matches;['services','works','masters','reviews'].forEach(function(id){var h=document.querySelector('#'+id+' .section-head h2');if(!h)return;if(on){h.style.setProperty('font-size','25px','important');h.style.setProperty('letter-spacing','0','important')}else{h.style.removeProperty('font-size');h.style.removeProperty('letter-spacing')}})}
+fix();addEventListener('resize',fix);if(mq.addEventListener)mq.addEventListener('change',fix)})();</script>
 </body>
 </html>
